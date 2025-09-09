@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewan Khaled - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar" id="scroll-progress"></div>
+    </div>
+    <nav class="fixed w-full z-50 backdrop-blur-md bg-black/80 border-b border-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold gradient-text">Rewan Khaled</div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden py-4 mobile-menu">
+            <div class="flex flex-col space-y-2">
+                <a href="#home" class="nav-link py-2">Home</a>
+                <a href="#about" class="nav-link py-2">About</a>
+                <a href="#experience" class="nav-link py-2">Experience</a>
+                <a href="#projects" class="nav-link py-2">Projects</a>
+                <a href="#skills" class="nav-link py-2">Skills</a>
+                <a href="#education" class="nav-link py-2">Education</a>
+                <a href="#contact" class="nav-link py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <section id="home"
+        class="min-h-screen flex items-center justify-center hero-bg relative overflow-hidden hero-adjusted">
+        <div class="absolute inset-0">
+            <div class="absolute top-20 left-10 w-32 h-32 border border-fuchsia-500/20 rounded-full floating"></div>
+            <div class="absolute top-40 right-20 w-24 h-24 bg-amber-500/10 rotate-45 floating"
+                style="animation-delay: 1s;"></div>
+            <div class="absolute bottom-40 left-20 w-40 h-40 border border-fuchsia-500/20 rounded-full floating"
+                style="animation-delay: 2s;"></div>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center hero-content">
+            <div class="mb-8 relative">
+                <img src="photo.png" alt="Rewan Khaled"
+                    class="w-48 h-48 rounded-full mx-auto border-4 border-fuchsia-500 shadow-2xl floating">
+                <div
+                    class="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-gray-900 pulse">
+                </div>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                <span class="gradient-text">Rewan Khaled</span>
+            </h1>
+            <p class="text-2xl md:text-3xl mb-6 text-gray-300 font-medium">
+                Junior Software Tester
+            </p>
+            <p class="text-lg mb-10 max-w-2xl mx-auto text-gray-400 leading-relaxed">
+                Recent Communication and Electronics Engineering graduate with a strong foundation in programming and a growing passion for software quality assurance. Eager to contribute to the delivery of high-quality products.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#projects"
+                    class="px-8 py-3 font-semibold rounded-lg border-2 border-fuchsia-500 text-white hover:border-amber-400 hover:text-amber-400 transition-all duration-300 transform hover:scale-105">
+                    View My Projects
+                </a>
+                <a href="#contact"
+                    class="btn-primary px-8 py-3 font-semibold rounded-lg transition-all duration-300 transform hover:scale-105">
+                    Get In Touch
+                </a>
+            </div>
+            <div class="mt-12 animate-bounce">
+                <a href="#about" class="text-gray-400 hover:text-white">
+                    <i class="fas fa-chevron-down text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-16 section-title">About Me</h2>
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="card p-8">
+                    <h3 class="text-2xl font-bold mb-6">My Objective</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        As a recent graduate in Communication and Electronics Engineering, I have built a strong foundation in programming and have developed a keen interest in software quality assurance.
+                    </p>
+                    <p class="text-gray-300 mb-8 leading-relaxed">
+                        I am eager to apply my analytical and problem-solving skills to ensure software reliability and functionality. Currently, I am expanding my expertise in manual software testing and am actively seeking an entry-level position as a Software Tester to contribute to delivering high-quality products.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-badge px-4 py-2 rounded-full text-sm font-medium">Quality Assurance</span>
+                        <span class="skill-badge px-4 py-2 rounded-full text-sm font-medium">Manual Testing</span>
+                        <span class="skill-badge px-4 py-2 rounded-full text-sm font-medium">Problem Solving</span>
+                        <span class="skill-badge px-4 py-2 rounded-full text-sm font-medium">Continuous Learning</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="card p-6 text-center">
+                        <div class="text-3xl text-fuchsia-500 mb-4">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">Problem Solving</h4>
+                        <p class="text-gray-400 text-sm">Strong analytical skills to identify and resolve issues.</p>
+                    </div>
+                    <div class="card p-6 text-center">
+                        <div class="text-3xl text-amber-400 mb-4">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">Debugging</h4>
+                        <p class="text-gray-400 text-sm">Proficient in troubleshooting and debugging code.</p>
+                    </div>
+                    <div class="card p-6 text-center">
+                        <div class="text-3xl text-green-500 mb-4">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">Team Collaboration</h4>
+                        <p class="text-gray-400 text-sm">Experience in leading and collaborating within teams.</p>
+                    </div>
+                    <div class="card p-6 text-center">
+                        <div class="text-3xl text-yellow-500 mb-4">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">Communication</h4>
+                        <p class="text-gray-400 text-sm">Clear and effective communication and mentoring skills.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section-divider"></div>
+    
+    <section id="experience" class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-16 section-title">Work Experience</h2>
+            <div class="relative timeline-container">
+                <div class="timeline-line"></div>
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card p-6">
+                        <span class="text-sm font-semibold text-gray-400">Sept 2024 - Present</span>
+                        <h3 class="text-xl font-bold text-fuchsia-500 mt-1">Teaching Assistant</h3>
+                        <p class="text-md text-gray-300 font-semibold mb-3">Damanhur University</p>
+                        <ul class="list-disc list-inside text-gray-400 text-sm space-y-1">
+                            <li>Taught Mathematics I & II and Introduction to Computer Science (Python).</li>
+                            <li>Delivered practical sessions in Microprocessors (Intel 8086).</li>
+                        </ul>
+                    </div>
+                </div>
+                 <!-- Timeline Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card p-6">
+                        <span class="text-sm font-semibold text-gray-400">Dec 2024 - June 2025</span>
+                        <h3 class="text-xl font-bold text-fuchsia-500 mt-1">Teaching Assistant</h3>
+                        <p class="text-md text-gray-300 font-semibold mb-3">BHI-Higher Institute of Engineering</p>
+                        <ul class="list-disc list-inside text-gray-400 text-sm space-y-1">
+                             <li>Instructed Introduction to Computer Science, teaching Python and flowchart logic.</li>
+                             <li>Provided academic support and mentorship to students.</li>
+                        </ul>
+                    </div>
+                </div>
+                 <!-- Timeline Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card p-6">
+                        <span class="text-sm font-semibold text-gray-400">July 2024 - April 2025</span>
+                        <h3 class="text-xl font-bold text-fuchsia-500 mt-1">Programming Instructor & Team Lead</h3>
+                        <p class="text-md text-gray-300 font-semibold mb-3">TechnoFuture</p>
+                         <ul class="list-disc list-inside text-gray-400 text-sm space-y-1">
+                            <li>Designed and delivered interactive lessons for logical thinking.</li>
+                            <li>Mentored student teams in national and regional competitions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section-divider"></div>
+
+    <section id="projects" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-16 section-title">Projects & Achievements</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card p-6 text-center">
+                    <div class="text-4xl text-green-400 mb-4">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">uTest Practice Cycle</h3>
+                    <p class="text-gray-400">Successfully completed the practice cycle using exploratory testing on a live project.</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="text-4xl text-amber-400 mb-4">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">1st Place, AIO Competition</h3>
+                    <p class="text-gray-400">Led a team to win first place in the Computer Vision category across the Arab World.</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="text-4xl text-gray-300 mb-4">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">2nd Place, AIO Competition</h3>
+                    <p class="text-gray-400">Achieved second place in Egypt in both Machine Learning and Coding categories.</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="text-4xl text-orange-400 mb-4">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Top Ranks, Young Innovators</h3>
+                    <p class="text-gray-400">Mentored teams to secure 2nd and 3rd place in Egypt with Arduino-based projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section-divider"></div>
+
+    <section id="skills" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-16 section-title">Skills & Expertise</h2>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-8 flex items-center">
+                        <i class="fas fa-code mr-3 text-fuchsia-500"></i>
+                        Technical Skills
+                    </h3>
+                    <div class="grid grid-cols-3 sm:grid-cols-4 gap-4">
+                        <div class="tech-icon flex flex-col items-center">
+                            <i class="fas fa-certificate text-3xl text-green-500 mb-2"></i>
+                            <span class="font-medium text-sm">ISTQB FL</span>
+                        </div>
+                         <div class="tech-icon flex flex-col items-center">
+                            <i class="fas fa-search text-3xl text-cyan-400 mb-2"></i>
+                            <span class="font-medium text-sm text-center">Exploratory Testing</span>
+                        </div>
+                        <div class="tech-icon flex flex-col items-center">
+                            <i class="fab fa-python text-3xl text-blue-500 mb-2"></i>
+                            <span class="font-medium text-sm">Python</span>
+                        </div>
+                         <div class="tech-icon flex flex-col items-center">
+                            <i class="fab fa-java text-3xl text-red-600 mb-2"></i>
+                            <span class="font-medium text-sm">Java</span>
+                        </div>
+                        <div class="tech-icon flex flex-col items-center">
+                            <i class="fas fa-database text-3xl text-blue-600 mb-2"></i>
+                            <span class="font-medium text-sm">SQL</span>
+                        </div>
+                        <div class="tech-icon flex flex-col items-center">
+                            <i class="fab fa-git-alt text-3xl text-orange-600 mb-2"></i>
+                            <span class="font-medium text-sm">Git/GitHub</span>
+                        </div>
+                        <div class="tech-icon flex flex-col items-center">
+                            <i class="fab fa-html5 text-3xl text-orange-500 mb-2"></i>
+                            <span class="font-medium text-sm">HTML</span>
+                        </div>
+                         <div class="tech-icon flex flex-col items-center">
+                            <i class="fab fa-css3-alt text-3xl text-blue-400 mb-2"></i>
+                            <span class="font-medium text-sm">CSS</span>
+                        </div>
+                        <div class="tech-icon flex flex-col items-center">
+                            <i class="fab fa-js text-3xl text-yellow-400 mb-2"></i>
+                            <span class="font-medium text-sm">JavaScript</span>
+                        </div>
+                         <div class="tech-icon flex flex-col items-center">
+                            <i class="fab fa-linux text-3xl text-white mb-2"></i>
+                            <span class="font-medium text-sm">Linux (Ubuntu)</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-8 flex items-center">
+                        <i class="fas fa-users mr-3 text-fuchsia-500"></i>
+                        Soft Skills
+                    </h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="skill-badge p-4 rounded-lg flex items-center">
+                            <i class="fas fa-lightbulb text-fuchsia-500 mr-3"></i>
+                            <span>Problem Solving</span>
+                        </div>
+                        <div class="skill-badge p-4 rounded-lg flex items-center">
+                            <i class="fas fa-bug text-amber-400 mr-3"></i>
+                            <span>Debugging</span>
+                        </div>
+                        <div class="skill-badge p-4 rounded-lg flex items-center">
+                            <i class="fas fa-users text-green-500 mr-3"></i>
+                            <span>Team Collaboration</span>
+                        </div>
+                        <div class="skill-badge p-4 rounded-lg flex items-center">
+                            <i class="fas fa-chalkboard-teacher text-yellow-500 mr-3"></i>
+                            <span>Communication</span>
+                        </div>
+                         <div class="skill-badge p-4 rounded-lg flex items-center">
+                            <i class="fas fa-bolt text-red-500 mr-3"></i>
+                            <span>Quick Learner</span>
+                        </div>
+                         <div class="skill-badge p-4 rounded-lg flex items-center">
+                            <i class="fas fa-cogs text-indigo-500 mr-3"></i>
+                            <span>Analytical Thinking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section-divider"></div>
+
+    <section id="education" class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-16 section-title">Education & Courses</h2>
+            <div class="card p-8">
+                <div class="mb-8">
+                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-fuchsia-500 mb-2">Alexandria University</h3>
+                            <p class="text-lg text-gray-300">
+                                B.Sc. in Electronics and Communication Engineering
+                            </p>
+                        </div>
+                        <div class="px-4 py-2 rounded-full text-sm font-medium bg-green-900/50 text-green-300 mt-4 md:mt-0">
+                            2019 - 2024
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">
+                       Graduated with a total grade of "Very Good" and achieved a grade of "A+" on the graduation project.
+                    </p>
+                </div>
+                 <div class="border-t border-gray-700 pt-6">
+                    <h3 class="text-xl font-bold mb-4 text-gray-200">Courses & Training</h3>
+                    <div class="grid sm:grid-cols-2 gap-4 text-gray-400">
+                        <p><i class="fas fa-certificate text-fuchsia-500 mr-2"></i>Digital Egypt Pioneers Initiative (DEPI)</p>
+                        <p><i class="fas fa-certificate text-fuchsia-500 mr-2"></i>ISTQB Foundation Level v4.0 (Udemy)</p>
+                        <p><i class="fas fa-certificate text-fuchsia-500 mr-2"></i>Manual Software Testing Bootcamp (Udemy)</p>
+                        <p><i class="fas fa-certificate text-fuchsia-500 mr-2"></i>Java Development for Beginners (Udemy)</p>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+    <div class="section-divider"></div>
+
+    <section id="contact" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-16 section-title">Get In Touch</h2>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Let's Connect</h3>
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        I'm always open to discussing new opportunities, creative projects, or potential collaborations.
+                        Whether you have a project in mind, want to collaborate, or just want to say hello, I'd love to
+                        hear from you.
+                    </p>
+                    <div class="space-y-4">
+                        <a href="mailto:rewan.khaled21@gmail.com"
+                            class="contact-card p-4 flex items-center group email-card">
+                            <div
+                                class="w-12 h-12 bg-fuchsia-500 rounded-lg flex items-center justify-center mr-4 group-hover:bg-fuchsia-600 transition-colors">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <p class="text-gray-400 text-sm">rewan.khaled21@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rewan-abdulkariem-9587a2193" target="_blank"
+                            class="contact-card p-4 flex items-center group linkedin-card">
+                            <div
+                                class="w-12 h-12 bg-fuchsia-600 rounded-lg flex items-center justify-center mr-4 group-hover:bg-fuchsia-700 transition-colors">
+                                <i class="fab fa-linkedin-in text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">LinkedIn</h4>
+                                <p class="text-gray-400 text-sm">linkedin.com/in/rewan-abdulkariem</p>
+                            </div>
+                        </a>
+                        <a href="https://wa.me/201094785078" target="_blank"
+                            class="contact-card p-4 flex items-center group whatsapp-card">
+                            <div
+                                class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mr-4 group-hover:bg-green-600 transition-colors">
+                                <i class="fab fa-whatsapp text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">WhatsApp</h4>
+                                <p class="text-gray-400 text-sm">+20 1094785078</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card p-8">
+                    <h3 class="text-2xl font-bold mb-6">Send a Message</h3>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-fuchsia-500 focus:ring-fuchsia-500 transition-colors">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-fuchsia-500 focus:ring-fuchsia-500 transition-colors">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium mb-2">Phone</label>
+                            <input type="tel" id="phone" name="phone"
+                                class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-fuchsia-500 focus:ring-fuchsia-500 transition-colors">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" required
+                                class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-fuchsia-500 focus:ring-fuchsia-500 transition-colors"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-12 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="text-2xl font-bold gradient-text mb-4">Rewan Khaled</div>
+                <p class="text-gray-400 mb-8">Software Tester </p>
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="mailto:rewan.khaled21@gmail.com" class="social-icon">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rewan-abdulkariem-9587a2193" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                     <a href="https://wa.me/201094785078" target="_blank" class="social-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                <p class="text-gray-500 text-sm">
+                    © 2025 Rewan Khaled. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
+
