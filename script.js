@@ -1,9 +1,9 @@
-// Mobile Menu Toggle
+// Mobile Menu Toggle (supports aria-controls or id selector)
 document.addEventListener('DOMContentLoaded', () => {
-    const mobileMenuButton = document.querySelector('[aria-controls="mobile-menu"]');
+    const mobileMenuButton = document.querySelector('[aria-controls="mobile-menu"]') || document.getElementById('mobile-menu-button');
     if (mobileMenuButton) {
         mobileMenuButton.addEventListener('click', function () {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
+            document.getElementById('mobile-menu')?.classList.toggle('hidden');
         });
     }
 });
@@ -80,88 +80,81 @@ if(backToTopButton){
     });
 }
 
-// EmailJS Configuration
+// EmailJS Configuration (guarded)
 (function() {
+    const formEl = document.getElementById('contact-form');
+    if (!formEl) return;
+    if (typeof emailjs === 'undefined' || !emailjs) {
+        console.warn('EmailJS SDK not loaded');
+        return;
+    }
     // Initialize EmailJS with your public key
-    emailjs.init("Kz_tOnL1-kItGfyW6"); // You'll need to replace this with your actual EmailJS public key
-    
-    // Contact Form Handler
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
+    emailjs.init('Kz_tOnL1-kItGfyW6');
+
+    formEl.addEventListener('submit', function(event) {
         event.preventDefault();
-        
+
         const submitButton = this.querySelector('button[type="submit"]');
         const originalText = submitButton.textContent;
-        
-        // Show loading state
         submitButton.textContent = 'Sending...';
         submitButton.disabled = true;
-        
-        // Get form data
+
+        const nameValue = document.getElementById('name')?.value || '';
+        const emailValue = document.getElementById('email')?.value || '';
+        const phoneValue = document.getElementById('phone')?.value || '';
+        const messageValue = document.getElementById('message')?.value || '';
+
+        // Include multiple aliases to match common EmailJS template variable names
         const formData = {
-            from_name: document.getElementById('name').value,
-            from_email: document.getElementById('email').value,
-            phone: document.getElementById('phone').value,
-            message: document.getElementById('message').value
+            from_name: nameValue,
+            name: nameValue,
+            // Email aliases
+            from_email: emailValue,
+            reply_to: emailValue,
+            user_email: emailValue,
+            email: emailValue,
+            // Phone aliases
+            phone: phoneValue,
+            user_phone: phoneValue,
+            tel: phoneValue,
+            // Message
+            message: messageValue
         };
-        
-        // Send email using EmailJS
+
         emailjs.send('service_0en78uq', 'template_i5e8yvc', formData)
-            .then(function(response) {
-                // Success
+            .then(() => {
                 submitButton.textContent = 'Message Sent!';
-                submitButton.style.background = 'linear-gradient(90deg, #10B981, #059669)'; // Green gradient
-                document.getElementById('contact-form').reset();
-                
-                // Reset button after 3 seconds
+                submitButton.style.background = 'linear-gradient(90deg, #10B981, #059669)';
+                formEl.reset();
                 setTimeout(() => {
                     submitButton.textContent = originalText;
                     submitButton.disabled = false;
                     submitButton.style.background = '';
                 }, 3000);
-                
-                // Show success message
                 showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
-            }, function(error) {
-                // Error
+            })
+            .catch((error) => {
                 submitButton.textContent = 'Error - Try Again';
-                submitButton.style.background = 'linear-gradient(90deg, #EF4444, #DC2626)'; // Red gradient
-                
-                // Reset button after 3 seconds
+                submitButton.style.background = 'linear-gradient(90deg, #EF4444, #DC2626)';
                 setTimeout(() => {
                     submitButton.textContent = originalText;
                     submitButton.disabled = false;
                     submitButton.style.background = '';
                 }, 3000);
-                
-                // Show error message
                 showNotification('Sorry, there was an error sending your message. Please try again.', 'error');
                 console.error('EmailJS Error:', error);
             });
     });
-    
-    // Notification function
+
     function showNotification(message, type) {
-        // Create notification element
         const notification = document.createElement('div');
-        notification.className = `fixed top-4 right-4 z-50 p-4 rounded-lg shadow-lg transition-all duration-300 transform translate-x-full ${
-            type === 'success' ? 'bg-green-500' : 'bg-red-500'
-        } text-white`;
+        notification.className = `fixed top-4 right-4 z-50 p-4 rounded-lg shadow-lg transition-all duration-300 transform translate-x-full ${type === 'success' ? 'bg-green-500' : 'bg-red-500'} text-white`;
         notification.textContent = message;
-        
-        // Add to page
         document.body.appendChild(notification);
-        
-        // Animate in
-        setTimeout(() => {
-            notification.style.transform = 'translateX(0)';
-        }, 100);
-        
-        // Remove after 5 seconds
+        setTimeout(() => { notification.style.transform = 'translateX(0)'; }, 100);
         setTimeout(() => {
             notification.style.transform = 'translateX(100%)';
-            setTimeout(() => {
-                document.body.removeChild(notification);
-            }, 300);
+            setTimeout(() => { document.body.removeChild(notification); }, 300);
         }, 5000);
     }
 })();

@@ -27,16 +27,16 @@
                 <div class="hidden md:flex items-center space-x-1">
                     <a href="#home" class="nav-link active">Home</a>
                     <a href="#about" class="nav-link">About</a>
-                    <a href="#services" class="nav-link">Services</a>
-                    <a href="#experience" class="nav-link">Experience</a>
-                    <a href="#testimonials" class="nav-link">Testimonials</a>
-                    <a href="#projects" class="nav-link">Projects</a>
-                    <a href="#skills" class="nav-link">Skills</a>
                     <a href="#education" class="nav-link">Education</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
                     <a href="#contact" class="nav-link">Contact</a>
                 </div>
                 <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <button id="mobile-menu-button" aria-controls="mobile-menu" class="text-white focus:outline-none">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -46,16 +46,17 @@
             <div class="flex flex-col space-y-2 px-4">
                 <a href="#home" class="nav-link py-2">Home</a>
                 <a href="#about" class="nav-link py-2">About</a>
-                <a href="#services" class="nav-link py-2">Services</a>
-                <a href="#experience" class="nav-link py-2">Experience</a>
-                <a href="#testimonials" class="nav-link py-2">Testimonials</a>
-                <a href="#projects" class="nav-link py-2">Projects</a>
-                <a href="#skills" class="nav-link py-2">Skills</a>
                 <a href="#education" class="nav-link py-2">Education</a>
+                <a href="#skills" class="nav-link py-2">Skills</a>
+                <a href="#experience" class="nav-link py-2">Experience</a>
+                <a href="#services" class="nav-link py-2">Services</a>
+                <a href="#projects" class="nav-link py-2">Projects</a>
+                <a href="#testimonials" class="nav-link py-2">Testimonials</a>
                 <a href="#contact" class="nav-link py-2">Contact</a>
             </div>
         </div>
     </nav>
+    <!-- Cover Section -->
     <section id="home"
         class="min-h-screen flex items-center justify-center hero-bg relative overflow-hidden hero-adjusted">
         <div class="absolute inset-0">
@@ -80,7 +81,8 @@
                 Junior Software Tester
             </p>
             <p class="text-lg mb-10 max-w-2xl mx-auto text-gray-400 leading-relaxed">
-                I help software teams improve product quality through meticulous manual testing, combining an engineer's analytical mindset with hands-on QA expertise to identify and address issues before they impact users.
+                I help software teams improve product quality through meticulous manual testing, combining an engineer's
+                analytical mindset with hands-on QA expertise to identify and address issues before they impact users.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="Rewan_Khaled_CV.pdf" download
@@ -99,6 +101,7 @@
             </div>
         </div>
     </section>
+    <!-- About Section -->
     <section id="about" class="py-20">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-4xl font-bold mb-16 section-title">About Me</h2>
@@ -153,167 +156,62 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-
+    <!-- Education Section -->
     <div class="section-divider"></div>
-    <section id="services" class="py-20">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold mb-16 section-title">Services I Offer</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="card p-6 text-center">
-                    <div class="text-3xl text-fuchsia-500 mb-4"><i class="fas fa-clipboard-check"></i></div>
-                    <h4 class="font-bold mb-2">Manual Testing & QA</h4>
-                    <p class="text-gray-400 text-sm">Comprehensive manual testing to identify functional, UI/UX, and
-                        usability issues across web and mobile applications.</p>
-                </div>
-                <div class="card p-6 text-center">
-                    <div class="text-3xl text-amber-400 mb-4"><i class="fas fa-tasks"></i></div>
-                    <h4 class="font-bold mb-2">Test Case Design & Execution</h4>
-                    <p class="text-gray-400 text-sm">Creating detailed test cases and systematic execution of
-                        comprehensive test scenarios to ensure complete coverage.</p>
-                </div>
-                <div class="card p-6 text-center">
-                    <div class="text-3xl text-green-400 mb-4"><i class="fas fa-bug"></i></div>
-                    <h4 class="font-bold mb-2">Defect Documentation</h4>
-                    <p class="text-gray-400 text-sm">Professional bug reporting with detailed reproduction steps, impact
-                        analysis, and clear communication to development teams.</p>
-                </div>
-                <div class="card p-6 text-center">
-                    <div class="text-3xl text-blue-400 mb-4"><i class="fas fa-search"></i></div>
-                    <h4 class="font-bold mb-2">Exploratory Testing</h4>
-                    <p class="text-gray-400 text-sm">Uncovering edge cases and unexpected behaviors through systematic
-                        exploration and real-world usage scenarios.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="section-divider"></div>
-    <section id="experience" class="py-20">
+    <section id="education" class="py-20">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold mb-16 section-title">Work Experience</h2>
-            <div class="relative timeline-container">
-                <div class="timeline-line"></div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content card p-6">
-                        <span class="text-sm font-semibold text-gray-400">Sept 2025 - Present</span>
-                        <h3 class="text-xl font-bold text-fuchsia-500 mt-1">Freelance Software Tester</h3>
-                        <p class="text-md text-gray-300 font-semibold mb-3">uTest</p>
-                        <ul class="list-disc list-inside text-gray-400 text-sm space-y-1">
-                            <li>Executed full testing cycles on live web applications.</li>
-                            <li>Performed exploratory testing to uncover functional bugs and UI/UX issues.</li>
-                            <li>Authored detailed, reproducible bug reports in a professional bug tracking system.</li>
+            <h2 class="text-4xl font-bold mb-16 section-title">Education & Certifications</h2>
+            <div class="card p-8">
+                <div class="mb-8">
+                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-fuchsia-500 mb-2">Alexandria University</h3>
+                            <p class="text-lg text-gray-300">B.Sc. in Electronics and Communication Engineering</p>
+                        </div>
+                        <div
+                            class="px-4 py-2 rounded-full text-sm font-medium bg-green-900/50 text-green-300 mt-4 md:mt-0">
+                            2019 - 2024</div>
+                    </div>
+                    <p class="text-gray-300 mb-6">Graduated with a grade of "Very Good" and achieved an "A+" on the
+                        graduation project, demonstrating strong academic and research capabilities.</p>
+                </div>
+                <div class="mb-8">
+                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-fuchsia-500 mb-2">Digital Egypt Pioneers Initiative (DEPI)</h3>
+                        </div>
+                        <div class="px-4 py-2 rounded-full text-sm font-medium bg-green-900/50 text-green-300 mt-4 md:mt-0">
+                            July 2025 - December 2025
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <ul class="list-disc list-inside text-gray-300 space-y-1 flex-1">
+                            <li>Mastered manual testing, SDLC/STLC, and risk-based testing.</li>
+                            <li>Applied test design techniques: boundary value, equivalence partitioning, decision tables.</li>
+                            <li>Managed test cases and defects using Jira; performed exploratory, usability, and cross-browser testing.</li>
                         </ul>
+                        <img src="DEPI Icon.png" alt="DEPI" class="w-20 h-20 ml-2 flex-shrink-0 self-start">
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content card p-6">
-                        <span class="text-sm font-semibold text-gray-400">Sept 2024 - Present</span>
-                        <h3 class="text-xl font-bold text-fuchsia-500 mt-1">Teaching Assistant</h3>
-                        <p class="text-md text-gray-300 font-semibold mb-3">Damanhur University</p>
-                        <ul class="list-disc list-inside text-gray-400 text-sm space-y-1">
-                            <li>Taught Introduction to Computer Science (Python) and Microprocessors.</li>
-                            <li>Developed a keen eye for detail by debugging hundreds of lines of student code.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content card p-6">
-                        <span class="text-sm font-semibold text-gray-400">July 2024 - April 2025</span>
-                        <h3 class="text-xl font-bold text-fuchsia-500 mt-1">Programming Instructor & Team Lead</h3>
-                        <p class="text-md text-gray-300 font-semibold mb-3">TechnoFuture</p>
-                        <ul class="list-disc list-inside text-gray-400 text-sm space-y-1">
-                            <li>Designed and delivered interactive lessons for logical thinking.</li>
-                            <li>Mentored student teams to win 1st, 2nd, and 3rd place in national and regional
-                                competitions.</li>
-                        </ul>
+                <div class="border-t border-gray-700 pt-6">
+                    <h3 class="text-xl font-bold mb-4 text-gray-200">Courses & Professional Development</h3>
+                    <div class="grid gap-4 text-gray-400">
+                        <p>
+                            <i class="fas fa-certificate text-fuchsia-500 mr-2"></i>ISTQB Foundation Level v4.0 (Udemy)
+                        </p>
+                        <p>
+                            <i class="fas fa-certificate text-fuchsia-500 mr-2"></i>Manual Software Testing Bootcamp (Udemy, In Progress)
+                        </p>
+                        <p>
+                            <i class="fas fa-certificate text-fuchsia-500 mr-2"></i>Java Development for Beginners (Udemy, In Progress)
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Testimonials Section -->
-    <div class="section-divider"></div>
-    <section id="testimonials" class="py-20">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold mb-16 section-title">What People Say</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="card p-6">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-fuchsia-500 rounded-full flex items-center justify-center mr-4">
-                            <i class="fas fa-user text-white"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold">Dr. Eman Awad</h4>
-                            <p class="text-gray-400 text-sm">Electrical Engineering Professor, Damanhour University</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-300 italic">
-                        "Rewan consistently demonstrates exceptional attention to detail in
-                        debugging student code. Her systematic approach to identifying and explaining programming errors
-                        would translate perfectly to software testing."
-                    </p>
-                </div>
 
-                <div class="card p-6">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4">
-                            <i class="fas fa-user text-white"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold">Hana Heilaa Student Team Member</h4>
-                            <p class="text-gray-400 text-sm">AIO Competition Winner</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-300 italic">"Under Rewan's mentorship, our team achieved 1st place in the Arab
-                        World AIO Competition. Her methodical approach to problem-solving and her ability to spot
-                        potential issues before they become problems were crucial to our success."</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="section-divider"></div>
-    <section id="projects" class="py-20">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold mb-16 section-title">Testing Projects & Achievements</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="card p-6 flex flex-col items-center text-center">
-                    <div class="text-4xl text-green-400 mb-4"><i class="fas fa-tasks"></i></div>
-                    <h3 class="text-xl font-bold mb-2">uTest Practice Cycle</h3>
-                    <p class="text-gray-400 mb-4 flex-grow">Successfully completed the practice cycle using exploratory
-                        testing on a live project under an NDA.</p>
-                    <span class="mt-auto font-semibold text-gray-500">Details Confidential</span>
-                </div>
-                <div class="card p-6 flex flex-col items-center text-center">
-                    <div class="text-4xl text-blue-400 mb-4"><i class="fas fa-credit-card"></i></div>
-                    <h3 class="text-xl font-bold mb-2">Online Payment Processing System (Java)</h3>
-                    <p class="text-gray-400 mb-4 flex-grow">Object-oriented design demonstrating abstract classes, interfaces, subclasses, and
-                        polymorphism to support multiple payment methods (e.g., card, wallet) with validation and
-                        security checks. Emphasizes clean architecture and extensibility for adding new payment types.</p>
-                    <a href="https://github.com/RewanAbdulkariem/Java-Learning-Projects/tree/main/Online%20Payment%20Processing%20System/src" target="_blank" rel="noopener" class="btn-primary">View Source</a>
-                </div>
-                <div class="card p-6 flex flex-col items-center text-center">
-                    <div class="text-4xl text-purple-400 mb-4"><i class="fas fa-university"></i></div>
-                    <h3 class="text-xl font-bold mb-2">University Course Registration System (Java OOP)</h3>
-                    <p class="text-gray-400 mb-4 flex-grow">Demonstrates OOP principles—Encapsulation, Inheritance, Polymorphism, Abstraction, and
-                        Interfaces—through a modular course enrollment domain (students, courses, registration rules),
-                        highlighting clean modeling and extensibility.</p>
-                    <a href="https://github.com/RewanAbdulkariem/DEPI-Software-Testing-Assignments/tree/main/University%20Course%20Registration%20System" target="_blank" rel="noopener" class="btn-primary">View Source</a>
-                </div>
-                <div class="card p-6 flex flex-col items-center text-center md:col-span-2 lg:col-span-3">
-                    <div class="text-4xl text-yellow-400 mb-4"><i class="fas fa-trophy"></i></div>
-                    <h3 class="text-xl font-bold mb-2">Competition Leadership Achievements</h3>
-                    <p class="text-gray-400 mb-4 flex-grow">Led and mentored student teams to achieve top rankings in
-                        major competitions, including <strong>1st place in the AIO Competition (Arab World)</strong> for
-                        Computer Vision and top 3 placements in Egypt for Machine Learning, Coding, and Arduino
-                        projects.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Skills Section -->
     <div class="section-divider"></div>
     <section id="skills" class="py-20">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -378,43 +276,180 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
+
+    <!-- Experience Section -->
     <div class="section-divider"></div>
-    <section id="education" class="py-20">
+    <section id="experience" class="py-20">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold mb-16 section-title">Education & Certifications</h2>
-            <div class="card p-8">
-                <div class="mb-8">
-                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-4">
-                        <div>
-                            <h3 class="text-2xl font-bold text-fuchsia-500 mb-2">Alexandria University</h3>
-                            <p class="text-lg text-gray-300">B.Sc. in Electronics and Communication Engineering</p>
-                        </div>
-                        <div
-                            class="px-4 py-2 rounded-full text-sm font-medium bg-green-900/50 text-green-300 mt-4 md:mt-0">
-                            2019 - 2024</div>
+            <h2 class="text-4xl font-bold mb-16 section-title">Work Experience</h2>
+            <div class="relative timeline-container">
+                <div class="timeline-line"></div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card p-6">
+                        <span class="text-sm font-semibold text-gray-400">Sept 2025 - Present</span>
+                        <h3 class="text-xl font-bold text-fuchsia-500 mt-1">Freelance Software Tester</h3>
+                        <p class="text-md text-gray-300 font-semibold mb-3">uTest</p>
+                        <ul class="list-disc list-inside text-gray-400 text-sm space-y-1">
+                            <li>Executed full testing cycles on live web applications.</li>
+                            <li>Performed exploratory testing to uncover functional bugs and UI/UX issues.</li>
+                            <li>Authored detailed, reproducible bug reports in a professional bug tracking system.</li>
+                        </ul>
                     </div>
-                    <p class="text-gray-300 mb-6">Graduated with a grade of "Very Good" and achieved an "A+" on the
-                        graduation project, demonstrating strong academic and research capabilities.</p>
                 </div>
-                <div class="border-t border-gray-700 pt-6">
-                    <h3 class="text-xl font-bold mb-4 text-gray-200">Courses & Professional Development</h3>
-                    <div class="grid sm:grid-cols-2 gap-4 text-gray-400">
-                        <p><i class="fas fa-certificate text-fuchsia-500 mr-2"></i>Digital Egypt Pioneers Initiative
-                            (DEPI)</p>
-                        <p><i class="fas fa-certificate text-fuchsia-500 mr-2"></i>ISTQB Foundation Level v4.0 (Udemy)
-                        </p>
-                        <p><i class="fas fa-certificate text-fuchsia-500 mr-2"></i>Manual Software Testing Bootcamp
-                            (Udemy, In Progress)</p>
-                        <p><i class="fas fa-certificate text-fuchsia-500 mr-2"></i>Java Development for Beginners
-                            (Udemy, In Progress)</p>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card p-6">
+                        <span class="text-sm font-semibold text-gray-400">Sept 2024 - Present</span>
+                        <h3 class="text-xl font-bold text-fuchsia-500 mt-1">Teaching Assistant</h3>
+                        <p class="text-md text-gray-300 font-semibold mb-3">Damanhur University</p>
+                        <ul class="list-disc list-inside text-gray-400 text-sm space-y-1">
+                            <li>Taught Introduction to Computer Science (Python) and Microprocessors.</li>
+                            <li>Developed a keen eye for detail by debugging hundreds of lines of student code.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card p-6">
+                        <span class="text-sm font-semibold text-gray-400">July 2024 - April 2025</span>
+                        <h3 class="text-xl font-bold text-fuchsia-500 mt-1">Programming Instructor & Team Lead</h3>
+                        <p class="text-md text-gray-300 font-semibold mb-3">TechnoFuture</p>
+                        <ul class="list-disc list-inside text-gray-400 text-sm space-y-1">
+                            <li>Designed and delivered interactive lessons for logical thinking.</li>
+                            <li>Mentored student teams to win 1st, 2nd, and 3rd place in national and regional
+                                competitions.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Services Section -->
     <div class="section-divider"></div>
+    <section id="services" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-16 section-title">Services I Offer</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card p-6 text-center">
+                    <div class="text-3xl text-fuchsia-500 mb-4"><i class="fas fa-clipboard-check"></i></div>
+                    <h4 class="font-bold mb-2">Manual Testing & QA</h4>
+                    <p class="text-gray-400 text-sm">Comprehensive manual testing to identify functional, UI/UX, and
+                        usability issues across web and mobile applications.</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="text-3xl text-amber-400 mb-4"><i class="fas fa-tasks"></i></div>
+                    <h4 class="font-bold mb-2">Test Case Design & Execution</h4>
+                    <p class="text-gray-400 text-sm">Creating detailed test cases and systematic execution of
+                        comprehensive test scenarios to ensure complete coverage.</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="text-3xl text-green-400 mb-4"><i class="fas fa-bug"></i></div>
+                    <h4 class="font-bold mb-2">Defect Documentation</h4>
+                    <p class="text-gray-400 text-sm">Professional bug reporting with detailed reproduction steps, impact
+                        analysis, and clear communication to development teams.</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="text-3xl text-blue-400 mb-4"><i class="fas fa-search"></i></div>
+                    <h4 class="font-bold mb-2">Exploratory Testing</h4>
+                    <p class="text-gray-400 text-sm">Uncovering edge cases and unexpected behaviors through systematic
+                        exploration and real-world usage scenarios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-16 section-title">Testing Projects & Achievements</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <div class="text-4xl text-green-400 mb-4"><i class="fas fa-tasks"></i></div>
+                    <h3 class="text-xl font-bold mb-2">uTest Practice Cycle</h3>
+                    <p class="text-gray-400 mb-4 flex-grow">Successfully completed the practice cycle using exploratory
+                        testing on a live project under an NDA.</p>
+                    <span class="mt-auto font-semibold text-gray-500">Details Confidential</span>
+                </div>
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <div class="text-4xl text-blue-400 mb-4"><i class="fas fa-credit-card"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Online Payment Processing System (Java)</h3>
+                    <p class="text-gray-400 mb-4 flex-grow">Object-oriented design demonstrating abstract classes,
+                        interfaces, subclasses, and
+                        polymorphism to support multiple payment methods (e.g., card, wallet) with validation and
+                        security checks. Emphasizes clean architecture and extensibility for adding new payment types.
+                    </p>
+                    <a href="https://github.com/RewanAbdulkariem/Java-Learning-Projects/tree/main/Online%20Payment%20Processing%20System/src"
+                        target="_blank" rel="noopener" class="btn-primary">View Source</a>
+                </div>
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <div class="text-4xl text-purple-400 mb-4"><i class="fas fa-university"></i></div>
+                    <h3 class="text-xl font-bold mb-2">University Course Registration System (Java OOP)</h3>
+                    <p class="text-gray-400 mb-4 flex-grow">Demonstrates OOP principles—Encapsulation, Inheritance,
+                        Polymorphism, Abstraction, and
+                        Interfaces—through a modular course enrollment domain (students, courses, registration rules),
+                        highlighting clean modeling and extensibility.</p>
+                    <a href="https://github.com/RewanAbdulkariem/DEPI-Software-Testing-Assignments/tree/main/University%20Course%20Registration%20System"
+                        target="_blank" rel="noopener" class="btn-primary">View Source</a>
+                </div>
+                <div class="card p-6 flex flex-col items-center text-center md:col-span-2 lg:col-span-3">
+                    <div class="text-4xl text-yellow-400 mb-4"><i class="fas fa-trophy"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Competition Leadership Achievements</h3>
+                    <p class="text-gray-400 mb-4 flex-grow">Led and mentored student teams to achieve top rankings in
+                        major competitions, including <strong>1st place in the AIO Competition (Arab World)</strong> for
+                        Computer Vision and top 3 placements in Egypt for Machine Learning, Coding, and Arduino
+                        projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <div class="section-divider"></div>
+    <section id="testimonials" class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-16 section-title">What People Say</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-fuchsia-500 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Dr. Eman Awad</h4>
+                            <p class="text-gray-400 text-sm">Electrical Engineering Professor, Damanhour University</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">
+                        "Rewan consistently demonstrates exceptional attention to detail in
+                        debugging student code. Her systematic approach to identifying and explaining programming errors
+                        would translate perfectly to software testing."
+                    </p>
+                </div>
+
+                <div class="card p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Hana Heilaa Student Team Member</h4>
+                            <p class="text-gray-400 text-sm">AIO Competition Winner</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">"Under Rewan's mentorship, our team achieved 1st place in the Arab
+                        World AIO Competition. Her methodical approach to problem-solving and her ability to spot
+                        potential issues before they become problems were crucial to our success."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+    <!-- Contact Section -->
     <section id="contact" class="py-20">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-4xl font-bold mb-16 section-title">Get In Touch</h2>
@@ -445,7 +480,7 @@
                             </div>
                             <div>
                                 <h4 class="font-bold">LinkedIn</h4>
-                                <p class="text-gray-400 text-sm">linkedin.com/in/rewan-abdulkariem</g>
+                                <p class="text-gray-400 text-sm">linkedin.com/in/rewan-abdulkariem</p>
                             </div>
                         </a>
                         <a href="https://wa.me/201094785078" target="_blank"
@@ -463,7 +498,7 @@
                 </div>
                 <div class="card p-8">
                     <h3 class="text-2xl font-bold mb-6">Send a Message</h3>
-                    <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="space-y-6">
+                    <form id="contact-form" class="space-y-6">
                         <div>
                             <label for="name" class="block text-sm font-medium mb-2">Name</label>
                             <input type="text" id="name" name="name" required
@@ -472,6 +507,11 @@
                         <div>
                             <label for="email" class="block text-sm font-medium mb-2">Email</label>
                             <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-fuchsia-500 focus:ring-fuchsia-500 transition-colors">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium mb-2">Phone (optional)</label>
+                            <input type="tel" id="phone" name="phone"
                                 class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-fuchsia-500 focus:ring-fuchsia-500 transition-colors">
                         </div>
                         <div>
@@ -495,7 +535,7 @@
                             class="fas fa-envelope"></i></a>
                     <a href="https://www.linkedin.com/in/rewan-abdulkariem-9587a2193" target="_blank"
                         class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/your-github-username" target="_blank" class="social-icon"
+                    <a href="https://github.com/RewanAbdulkariem" target="_blank" class="social-icon"
                         aria-label="GitHub"><i class="fab fa-github"></i></a>
                 </div>
                 <p class="text-gray-500 text-sm">
@@ -507,6 +547,7 @@
     <div id="back-to-top" class="back-to-top">
         <a href="#home" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 
