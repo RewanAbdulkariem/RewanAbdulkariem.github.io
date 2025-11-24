@@ -1,11 +1,17 @@
 :root {
-    --primary: #D946EF;      /* Pink/Fuchsia from the image */
-    --primary-dark: #C026D3; /* Darker Pink/Fuchsia */
-    --secondary: #FBBF24;    /* Yellow/Amber from the image */
-    --accent: #FBBF24;       /* Yellow/Amber */
-    --dark: #0D0D0D;         /* Very dark background from the image */
+    --primary: #D946EF;
+    /* Pink/Fuchsia from the image */
+    --primary-dark: #C026D3;
+    /* Darker Pink/Fuchsia */
+    --secondary: #FBBF24;
+    /* Yellow/Amber from the image */
+    --accent: #FBBF24;
+    /* Yellow/Amber */
+    --dark: #0D0D0D;
+    /* Very dark background from the image */
     --light: #f8fafc;
-    --gray: #A0AEC0;         /* Lighter gray for secondary text */
+    --gray: #A0AEC0;
+    /* Lighter gray for secondary text */
     --card-bg: rgba(255, 255, 255, 0.04);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -123,7 +129,8 @@ h6 {
 
 .tech-icon:hover {
     transform: translateY(-5px);
-    background: rgba(217, 70, 239, 0.2); /* Pink hover */
+    background: rgba(217, 70, 239, 0.2);
+    /* Pink hover */
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
@@ -215,7 +222,8 @@ h6 {
 }
 
 .skill-badge:hover {
-    background: rgba(217, 70, 239, 0.2); /* Pink hover */
+    background: rgba(217, 70, 239, 0.2);
+    /* Pink hover */
     border-color: var(--primary);
     transform: translateY(-2px);
 }
@@ -272,7 +280,8 @@ h6 {
 .social-icon:hover {
     transform: translateY(-5px);
     border-color: var(--primary);
-    background: rgba(217, 70, 239, 0.1); /* Pink hover */
+    background: rgba(217, 70, 239, 0.1);
+    /* Pink hover */
 }
 
 .certificate-card {
@@ -370,7 +379,8 @@ h6 {
 /* --- Timeline Styles --- */
 .timeline-container {
     position: relative;
-    padding-left: 2.5rem; /* Space for the timeline line */
+    padding-left: 2.5rem;
+    /* Space for the timeline line */
 }
 
 .timeline-line {
@@ -414,37 +424,124 @@ h6 {
         margin-left: auto;
         margin-right: auto;
     }
+
     .timeline-line {
         left: 50%;
         transform: translateX(-50%);
     }
+
     .timeline-item {
         width: 50%;
         padding-right: 2rem;
         margin-bottom: 2rem;
     }
+
     .timeline-item:last-child {
-       margin-bottom: 0;
+        margin-bottom: 0;
     }
+
     .timeline-item:nth-child(even) {
         margin-left: 50%;
         padding-left: 2rem;
         padding-right: 0;
     }
+
     .timeline-dot {
         top: 10px;
         transform: translateX(-50%);
     }
+
     /* Dot for items on the LEFT */
     .timeline-item:nth-child(odd) .timeline-dot {
-       left: 100%;
+        left: 100%;
     }
+
     /* Dot for items on the RIGHT */
     .timeline-item:nth-child(even) .timeline-dot {
-       left: 0;
+        left: 0;
     }
+
     .timeline-content {
-       margin-left: 0;
+        margin-left: 0;
     }
 }
 
+
+nav {
+    backdrop-filter: blur(15px);
+    transition: all 0.3s ease;
+}
+
+/* Glow effect */
+nav .gradient-text {
+    animation: logo-glow 2s ease-in-out infinite;
+}
+
+@keyframes logo-glow {
+
+    0%,
+    100% {
+        filter: drop-shadow(0 0 5px rgba(217, 70, 239, 0.5));
+    }
+
+    50% {
+        filter: drop-shadow(0 0 20px rgba(217, 70, 239, 0.8));
+    }
+}
+
+/* Ripple effect for buttons */
+.btn-primary,
+.btn-outline {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary::before,
+.btn-outline::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn-primary:hover::before,
+.btn-outline:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.btn-primary:active,
+.btn-outline:active {
+    transform: scale(0.95);
+}
+
+.portfolio-cta {
+    font-style: italic;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.75) !important;
+    margin-top: 12px;
+}
+
+.text-glow {
+    text-shadow:
+        0 0 6px rgba(217, 70, 239, 0.7),
+        0 0 12px rgba(217, 70, 239, 0.5),
+        0 0 18px rgba(251, 191, 36, 0.4);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

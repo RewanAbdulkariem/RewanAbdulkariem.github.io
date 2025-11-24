@@ -164,3 +164,78 @@ window.addEventListener('load', function () {
     updateActiveLink();
     updateScrollProgress();
 });
+
+// Create animated particles in background
+function createParticles() {
+    const heroSection = document.querySelector('#home');
+    if (!heroSection) return;
+    
+    const particlesContainer = document.createElement('div');
+    particlesContainer.style.cssText = `
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 0;
+    `;
+    
+    heroSection.insertBefore(particlesContainer, heroSection.firstChild);
+    
+    for (let i = 0; i < 30; i++) {
+        const particle = document.createElement('div');
+        particle.style.cssText = `
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: rgba(217, 70, 239, 0.5);
+            border-radius: 50%;
+            left: ${Math.random() * 100}%;
+            top: ${Math.random() * 100}%;
+            animation: float-particle ${Math.random() * 10 + 10}s infinite;
+            animation-delay: ${Math.random() * 15}s;
+        `;
+        particlesContainer.appendChild(particle);
+    }
+}
+
+// Add keyframes for particles
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes float-particle {
+        0%, 100% {
+            transform: translateY(0) translateX(0);
+            opacity: 0;
+        }
+        10% {
+            opacity: 1;
+        }
+        90% {
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-100vh) translateX(100px);
+            opacity: 0;
+        }
+    }
+`;
+document.head.appendChild(style);
+
+// Initialize particles when page loads
+window.addEventListener('load', createParticles);
+
+// Reveal on Scroll
+const revealElements = document.querySelectorAll(".reveal");
+
+function handleReveal() {
+    revealElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+            el.classList.add("visible");
+        }
+    });
+}
+
+window.addEventListener("scroll", handleReveal);
+window.addEventListener("load", handleReveal);
