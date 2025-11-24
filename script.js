@@ -19,7 +19,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 block: 'start'
             });
             const mobileMenu = document.getElementById('mobile-menu');
-            if(mobileMenu && !mobileMenu.classList.contains('hidden')){
+            if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
                 mobileMenu.classList.add('hidden');
             }
         }
@@ -54,7 +54,7 @@ function updateScrollProgress() {
 // Back to Top Button
 function toggleBackToTop() {
     const backToTop = document.getElementById('back-to-top');
-    if(backToTop){
+    if (backToTop) {
         if (window.pageYOffset > 300) {
             backToTop.classList.add('show');
         } else {
@@ -71,7 +71,7 @@ window.addEventListener('scroll', function () {
 });
 
 const backToTopButton = document.getElementById('back-to-top');
-if(backToTopButton){
+if (backToTopButton) {
     backToTopButton.addEventListener('click', function () {
         window.scrollTo({
             top: 0,
@@ -81,7 +81,7 @@ if(backToTopButton){
 }
 
 // EmailJS Configuration (guarded)
-(function() {
+(function () {
     const formEl = document.getElementById('contact-form');
     if (!formEl) return;
     if (typeof emailjs === 'undefined' || !emailjs) {
@@ -91,7 +91,7 @@ if(backToTopButton){
     // Initialize EmailJS with your public key
     emailjs.init('Kz_tOnL1-kItGfyW6');
 
-    formEl.addEventListener('submit', function(event) {
+    formEl.addEventListener('submit', function (event) {
         event.preventDefault();
 
         const submitButton = this.querySelector('button[type="submit"]');
@@ -169,7 +169,7 @@ window.addEventListener('load', function () {
 function createParticles() {
     const heroSection = document.querySelector('#home');
     if (!heroSection) return;
-    
+
     const particlesContainer = document.createElement('div');
     particlesContainer.style.cssText = `
         position: absolute;
@@ -180,9 +180,9 @@ function createParticles() {
         pointer-events: none;
         z-index: 0;
     `;
-    
+
     heroSection.insertBefore(particlesContainer, heroSection.firstChild);
-    
+
     for (let i = 0; i < 30; i++) {
         const particle = document.createElement('div');
         particle.style.cssText = `

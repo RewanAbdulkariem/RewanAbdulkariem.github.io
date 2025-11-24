@@ -121,7 +121,8 @@
 
                     </p>
                     <a href="#projects" class="portfolio-cta mb-6 text-glow block cursor-pointer">
-                        If you'd like to see how I work, check my real test cases, bug reports, and project breakdowns below.
+                        If you'd like to see how I work, check my real test cases, bug reports, and project breakdowns
+                        below.
                     </a>
                     <div class="flex flex-wrap gap-3">
                         <span class="skill-badge px-4 py-2 rounded-full text-sm font-medium">Web Testing</span>
@@ -170,251 +171,478 @@
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-4xl font-bold mb-16 section-title">Education & Certifications</h2>
             <div class="card p-8">
-                <div class="mb-8">
-                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-4">
+
+                <!-- University -->
+                <div class="mb-10">
+                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-3">
                         <div>
-                            <h3 class="text-2xl font-bold text-fuchsia-500 mb-2">Alexandria University</h3>
+                            <h3 class="text-2xl font-bold text-fuchsia-500 mb-1">Alexandria University</h3>
                             <p class="text-lg text-gray-300">B.Sc. in Electronics and Communication Engineering</p>
                         </div>
-                        <div
+                        <span
                             class="px-4 py-2 rounded-full text-sm font-medium bg-green-900/50 text-green-300 mt-4 md:mt-0">
-                            2019 - 2024</div>
+                            2019 – 2024
+                        </span>
                     </div>
-                    <p class="text-gray-300 mb-6">Graduated with a grade of "Very Good" and achieved an "A+" on the
-                        graduation project, demonstrating strong academic and research capabilities.</p>
+
+                    <ul class="list-disc list-inside text-gray-300 leading-relaxed space-y-1">
+                        <li>Graduated with a "Very Good" grade and earned an "A+" on the graduation project.</li>
+                        <li>Relevant coursework includes Computer Networks, Microprocessors, Digital Systems, Data
+                            Structures, Embedded Systems, and Programming in C & Python.</li>
+                    </ul>
                 </div>
-                <div class="mb-8">
-                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-4">
+
+                <!-- DEPI -->
+                <div class="mb-10">
+                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-3">
                         <div>
-                            <h3 class="text-2xl font-bold text-fuchsia-500 mb-2">Digital Egypt Pioneers Initiative
+                            <h3 class="text-2xl font-bold text-fuchsia-500 mb-1">Digital Egypt Pioneers Initiative
                                 (DEPI)</h3>
+                            <p class="text-lg text-gray-300">Software Testing Track</p>
                         </div>
-                        <div
+                        <span
                             class="px-4 py-2 rounded-full text-sm font-medium bg-green-900/50 text-green-300 mt-4 md:mt-0">
-                            July 2025 - December 2025
-                        </div>
+                            July 2025 – December 2025
+                        </span>
                     </div>
-                    <p class="text-gray-300 mb-6">
-                        Pursuing intensive hands-on training in software testing, developing skills in manual testing,
-                        SDLC/STLC, test design techniques, Jira defect management, exploratory testing, and Agile team
-                        collaboration through a practical capstone project.
-                    </p>
+
+                    <ul class="list-disc list-inside text-gray-300 leading-relaxed space-y-1 mb-6">
+                        <li>Hands-on training in software testing and test design techniques.</li>
+                        <li>Practical experience with SDLC/STLC and Agile workflow.</li>
+                        <li>Defect reporting using Jira and test management with Zephyr Scale.</li>
+                        <li>API testing using Postman.</li>
+                        <li>Automation using Java, Selenium WebDriver, and TestNG.</li>
+                    </ul>
                 </div>
+
+                <!-- Courses -->
                 <div class="border-t border-gray-700 pt-6">
                     <h3 class="text-xl font-bold mb-4 text-gray-200">Courses & Professional Development</h3>
-                    <div class="grid gap-4 text-gray-400">
-                        <p>
-                            <i class="fas fa-certificate text-fuchsia-500 mr-2"></i>ISTQB Foundation Level v4.0 (Udemy)
-                        </p>
-                        <p>
-                            <i class="fas fa-certificate text-fuchsia-500 mr-2"></i>Manual Software Testing Bootcamp
-                            (Udemy, In Progress)
-                        </p>
-                        <p>
-                            <i class="fas fa-certificate text-fuchsia-500 mr-2"></i>Java Development for Beginners
-                            (Udemy, In Progress)
-                        </p>
+
+                    <div class="space-y-5 text-gray-400">
+
+                        <div class="certificate-card p-4">
+                            <h4 class="font-semibold text-gray-200">ISTQB Foundation Level v4.0 – by Tarek Roshdy (Nezam
+                                Team)</h4>
+                        </div>
+
+                        <div class="certificate-card p-4">
+                            <h4 class="font-semibold text-gray-200">Manual Software Testing Bootcamp – by Tarek Roshdy
+                                (Nezam Team)</h4>
+                            <p class="text-sm mt-1 leading-relaxed">
+                                Practical training in manual testing, test cases, Jira defect reporting, Zephyr Scale,
+                                API testing (Postman), Java basics, Selenium WebDriver, TestNG, POM, and basic
+                                performance testing with JMeter.
+                            </p>
+                        </div>
+
+                        <div class="certificate-card p-4">
+                            <h4 class="font-semibold text-gray-200">Java From Zero to First Job – by Andrii Piatakha
+                                (Learn IT University)</h4>
+                            <p class="text-sm mt-1 leading-relaxed">
+                                Java fundamentals, OOP, collections, debugging, clean code concepts, Git.
+                            </p>
+                        </div>
+
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
     <div class="section-divider"></div>
-    <section id="skills" class="py-20">
+    <section id="skills" class="py-20" aria-labelledby="skills-heading">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold mb-16 section-title">Skills & Expertise</h2>
+            <h2 id="skills-heading" class="text-4xl font-bold mb-16 section-title">Skills & Expertise</h2>
+
             <div class="grid lg:grid-cols-2 gap-12">
+
+                <!-- Testing & QA (left) -->
                 <div>
                     <h3 class="text-2xl font-bold mb-8 flex items-center">
-                        <i class="fas fa-check-circle mr-3 text-fuchsia-500"></i>
+                        <i class="fas fa-check-circle mr-3 text-fuchsia-500" aria-hidden="true"></i>
                         Testing & QA
                     </h3>
+
                     <div class="grid grid-cols-2 gap-4">
-                        <div class="skill-badge p-4 rounded-lg flex items-center"><i
-                                class="fas fa-file-alt text-fuchsia-500 mr-3"></i><span>Test Planning</span></div>
-                        <div class="skill-badge p-4 rounded-lg flex items-center"><i
-                                class="fas fa-tasks text-fuchsia-500 mr-3"></i><span>Test Case Design</span></div>
-                        <div class="skill-badge p-4 rounded-lg flex items-center"><i
-                                class="fas fa-search text-fuchsia-500 mr-3"></i><span>Exploratory Testing</span></div>
-                        <div class="skill-badge p-4 rounded-lg flex items-center"><i
-                                class="fas fa-bug text-fuchsia-500 mr-3"></i><span>Defect Reporting (Jira)</span></div>
-                        <div class="skill-badge p-4 rounded-lg flex items-center"><i
-                                class="fas fa-cogs text-fuchsia-500 mr-3"></i><span>SDLC & STLC</span></div>
-                        <div class="skill-badge p-4 rounded-lg flex items-center"><i
-                                class="fas fa-users text-fuchsia-500 mr-3"></i><span>Agile Methodologies</span></div>
+                        <!-- keep these concise -->
+                        <div class="skill-badge p-4 rounded-lg flex items-center" role="listitem" title="Test Planning"
+                            style="min-height:56px;">
+                            <i class="fas fa-file-alt text-fuchsia-500 mr-3" aria-hidden="true"></i>
+                            <span>Test Planning</span>
+                        </div>
+
+                        <div class="skill-badge p-4 rounded-lg flex items-center" role="listitem"
+                            title="Test Case Design" style="min-height:56px;">
+                            <i class="fas fa-tasks text-fuchsia-500 mr-3" aria-hidden="true"></i>
+                            <span>Test Case Design</span>
+                        </div>
+
+                        <div class="skill-badge p-4 rounded-lg flex items-center" role="listitem"
+                            title="Exploratory Testing" style="min-height:56px;">
+                            <i class="fas fa-search text-fuchsia-500 mr-3" aria-hidden="true"></i>
+                            <span>Exploratory Testing</span>
+                        </div>
+
+                        <div class="skill-badge p-4 rounded-lg flex items-center" role="listitem"
+                            title="Defect Reporting (Jira)" style="min-height:56px;">
+                            <i class="fas fa-bug text-fuchsia-500 mr-3" aria-hidden="true"></i>
+                            <span>Defect Reporting (Jira)</span>
+                        </div>
+
+                        <div class="skill-badge p-4 rounded-lg flex items-center" role="listitem"
+                            title="API Testing (Postman)" style="min-height:56px;">
+                            <i class="fas fa-network-wired text-fuchsia-500 mr-3" aria-hidden="true"></i>
+                            <span>API Testing (Postman)</span>
+                        </div>
+
+                        <div class="skill-badge p-4 rounded-lg flex items-center" role="listitem" title="SDLC & STLC"
+                            style="min-height:56px;">
+                            <i class="fas fa-cogs text-fuchsia-500 mr-3" aria-hidden="true"></i>
+                            <span>SDLC & STLC</span>
+                        </div>
+
+                        <div class="skill-badge p-4 rounded-lg flex items-center" role="listitem"
+                            title="Automation Foundations (Selenium & TestNG)" style="min-height:56px;">
+                            <i class="fas fa-robot text-fuchsia-500 mr-3" aria-hidden="true"></i>
+                            <span>Automation foundations (Selenium, TestNG)</span>
+                        </div>
+
+                        <div class="skill-badge p-4 rounded-lg flex items-center" role="listitem"
+                            title="Agile Methodologies" style="min-height:56px;">
+                            <i class="fas fa-users text-fuchsia-500 mr-3" aria-hidden="true"></i>
+                            <span>Agile Methodologies</span>
+                        </div>
+
+                        <div class="skill-badge p-4 rounded-lg flex items-center" role="listitem"
+                            title="Regression Testing" style="min-height:56px;">
+                            <i class="fas fa-sync-alt text-fuchsia-500 mr-3" aria-hidden="true"></i>
+                            <span>Regression Testing</span>
+                        </div>
+
+                        <div class="skill-badge p-4 rounded-lg flex items-center" role="listitem"
+                            title="Performance Testing (JMeter basics)" style="min-height:56px;">
+                            <i class="fas fa-tachometer-alt text-fuchsia-500 mr-3" aria-hidden="true"></i>
+                            <span>Performance Testing (JMeter)</span>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Technical & Tools (right) -->
                 <div>
                     <h3 class="text-2xl font-bold mb-8 flex items-center">
-                        <i class="fas fa-code mr-3 text-fuchsia-500"></i>
+                        <i class="fas fa-code mr-3 text-fuchsia-500" aria-hidden="true"></i>
                         Technical & Tools
                     </h3>
+
                     <div class="grid grid-cols-3 sm:grid-cols-4 gap-4">
-                        <div class="tech-icon flex flex-col items-center" title="Python"><i
-                                class="fab fa-python text-3xl text-blue-500 mb-2"></i><span
-                                class="font-medium text-sm">Python</span></div>
-                        <div class="tech-icon flex flex-col items-center" title="Java"><i
-                                class="fab fa-java text-3xl text-red-600 mb-2"></i><span
-                                class="font-medium text-sm">Java</span></div>
-                        <div class="tech-icon flex flex-col items-center" title="SQL"><i
-                                class="fas fa-database text-3xl text-blue-600 mb-2"></i><span
-                                class="font-medium text-sm">SQL</span></div>
-                        <div class="tech-icon flex flex-col items-center" title="Git/GitHub"><i
-                                class="fab fa-git-alt text-3xl text-orange-600 mb-2"></i><span
-                                class="font-medium text-sm">Git/GitHub</span></div>
-                        <div class="tech-icon flex flex-col items-center" title="HTML"><i
-                                class="fab fa-html5 text-3xl text-orange-500 mb-2"></i><span
-                                class="font-medium text-sm">HTML</span></div>
-                        <div class="tech-icon flex flex-col items-center" title="CSS"><i
-                                class="fab fa-css3-alt text-3xl text-blue-400 mb-2"></i><span
-                                class="font-medium text-sm">CSS</span></div>
-                        <div class="tech-icon flex flex-col items-center" title="JavaScript"><i
-                                class="fab fa-js text-3xl text-yellow-400 mb-2"></i><span
-                                class="font-medium text-sm">JavaScript</span></div>
-                        <div class="tech-icon flex flex-col items-center" title="Linux (Ubuntu)"><i
-                                class="fab fa-linux text-3xl text-white mb-2"></i><span
-                                class="font-medium text-sm">Linux</span></div>
-                        <div class="tech-icon flex flex-col items-center" title="Jira"><i
-                                class="fab fa-jira text-3xl text-blue-400 mb-2"></i><span
-                                class="font-medium text-sm">Jira</span></div>
-                        <div class="tech-icon flex flex-col items-center" title="Trello"><i
-                                class="fab fa-trello text-3xl text-blue-500 mb-2"></i><span
-                                class="font-medium text-sm">Trello</span></div>
-                    </div>
-                </div>
-            </div>
-    </section>
+                        <!-- Grouped by QA relevance first -->
+                        <div class="tech-icon flex flex-col items-center justify-center p-4 rounded-lg" title="Jira"
+                            style="min-height:72px;">
+                            <i class="fab fa-jira text-3xl mb-2" aria-hidden="true"></i>
+                            <span class="font-medium text-sm">Jira</span>
+                        </div>
+                        
+                        <div class="tech-icon flex flex-col items-center justify-center p-4 rounded-lg" title="Azure" style="min-height:72px;">
+                            <i class="fab fa-microsoft text-3xl mb-2" aria-hidden="true"></i>
+                            <div class="font-medium text-sm">Azure</div>
+                        </div>
+                        
+                        <div class="tech-icon flex flex-col items-center justify-center p-4 rounded-lg"
+                            title="Zephyr Scale" style="min-height:72px;">
+                            <i class="fas fa-clipboard-list text-3xl mb-2" aria-hidden="true"></i>
+                            <span class="font-medium text-sm">Zephyr Scale</span>
+                        </div>
 
-    <!-- Experience Section -->
-    <div class="section-divider"></div>
-    <section id="experience" class="py-20">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold mb-16 section-title">Work Experience</h2>
-            <div class="relative timeline-container">
-                <div class="timeline-line"></div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content card p-6">
-                        <span class="text-sm font-semibold text-gray-400">Sept 2025 - Present</span>
-                        <h3 class="text-xl font-bold text-fuchsia-500 mt-1">Freelance Software Tester</h3>
-                        <p class="text-md text-gray-300 font-semibold mb-3">uTest</p>
-                        <ul class="list-disc list-inside text-gray-400 text-sm space-y-1">
-                            <li>Executed full testing cycles on live web applications.</li>
-                            <li>Performed exploratory testing to uncover functional bugs and UI/UX issues.</li>
-                            <li>Authored detailed, reproducible bug reports in a professional bug tracking system.</li>
-                        </ul>
+                        <div class="tech-icon flex flex-col items-center justify-center p-4 rounded-lg" title="Postman"
+                            style="min-height:72px;">
+                            <i class="fas fa-paper-plane text-3xl mb-2" aria-hidden="true"></i>
+                            <span class="font-medium text-sm">Postman</span>
+                        </div>
+
+                        <div class="tech-icon flex flex-col items-center justify-center p-4 rounded-lg"
+                            title="Selenium WebDriver" style="min-height:72px;">
+                            <i class="fas fa-vial text-3xl mb-2" aria-hidden="true"></i>
+                            <span class="font-medium text-sm">Selenium</span>
+                        </div>
+
+                        <div class="tech-icon flex flex-col items-center justify-center p-4 rounded-lg" title="TestNG"
+                            style="min-height:72px;">
+                            <i class="fas fa-sliders-h text-3xl mb-2" aria-hidden="true"></i>
+                            <span class="font-medium text-sm">TestNG</span>
+                        </div>
+
+                        <div class="tech-icon flex flex-col items-center justify-center p-4 rounded-lg" title="JMeter"
+                            style="min-height:72px;">
+                            <i class="fas fa-bolt text-3xl mb-2" aria-hidden="true"></i>
+                            <span class="font-medium text-sm">JMeter</span>
+                        </div>
+
+                        <!-- Core languages & tools -->
+                        <div class="tech-icon flex flex-col items-center justify-center p-4 rounded-lg" title="Java"
+                            style="min-height:72px;">
+                            <i class="fab fa-java text-3xl mb-2" aria-hidden="true"></i>
+                            <span class="font-medium text-sm">Java</span>
+                        </div>
+
+                        <div class="tech-icon flex flex-col items-center justify-center p-4 rounded-lg" title="Python"
+                            style="min-height:72px;">
+                            <i class="fab fa-python text-3xl mb-2" aria-hidden="true"></i>
+                            <span class="font-medium text-sm">Python</span>
+                        </div>
+
+                        <div class="tech-icon flex flex-col items-center justify-center p-4 rounded-lg" title="SQL"
+                            style="min-height:72px;">
+                            <i class="fas fa-database text-3xl mb-2" aria-hidden="true"></i>
+                            <span class="font-medium text-sm">SQL</span>
+                        </div>
+
+                        <div class="tech-icon flex flex-col items-center justify-center p-4 rounded-lg"
+                            title="Git/GitHub" style="min-height:72px;">
+                            <i class="fab fa-git-alt text-3xl mb-2" aria-hidden="true"></i>
+                            <span class="font-medium text-sm">Git / GitHub</span>
+                        </div>
+
+                        <div class="tech-icon flex flex-col items-center justify-center p-4 rounded-lg" title="Linux"
+                            style="min-height:72px;">
+                            <i class="fab fa-linux text-3xl mb-2" aria-hidden="true"></i>
+                            <span class="font-medium text-sm">Linux</span>
+                        </div>
+
+                        <div class="tech-icon flex flex-col items-center justify-center p-4 rounded-lg"
+                            title="HTML / CSS / JavaScript" style="min-height:72px;">
+                            <i class="fas fa-code text-3xl mb-2" aria-hidden="true"></i>
+                            <span class="font-medium text-sm">HTML · CSS · JavaScript</span>
+                        </div>
+
+                        <!-- Collaboration -->
+                        <div class="tech-icon flex flex-col items-center justify-center p-4 rounded-lg" title="Trello"
+                            style="min-height:72px;">
+                            <i class="fab fa-trello text-3xl mb-2" aria-hidden="true"></i>
+                            <span class="font-medium text-sm">Trello</span>
+                        </div>
+
+                        <div class="tech-icon flex flex-col items-center justify-center p-4 rounded-lg" title="VS Code"
+                            style="min-height:72px;">
+                            <i class="fas fa-laptop-code text-3xl mb-2" aria-hidden="true"></i>
+                            <span class="font-medium text-sm">VS Code</span>
+                        </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content card p-6">
-                        <span class="text-sm font-semibold text-gray-400">Sept 2024 - Present</span>
-                        <h3 class="text-xl font-bold text-fuchsia-500 mt-1">Teaching Assistant</h3>
-                        <p class="text-md text-gray-300 font-semibold mb-3">Damanhur University</p>
-                        <ul class="list-disc list-inside text-gray-400 text-sm space-y-1">
-                            <li>Taught Introduction to Computer Science (Python) and Microprocessors.</li>
-                            <li>Developed a keen eye for detail by debugging hundreds of lines of student code.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content card p-6">
-                        <span class="text-sm font-semibold text-gray-400">July 2024 - April 2025</span>
-                        <h3 class="text-xl font-bold text-fuchsia-500 mt-1">Programming Instructor & Team Lead</h3>
-                        <p class="text-md text-gray-300 font-semibold mb-3">TechnoFuture</p>
-                        <ul class="list-disc list-inside text-gray-400 text-sm space-y-1">
-                            <li>Designed and delivered interactive lessons for logical thinking.</li>
-                            <li>Mentored student teams to win 1st, 2nd, and 3rd place in national and regional
-                                competitions.</li>
-                        </ul>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <div class="section-divider"></div>
-    <section id="services" class="py-20">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold mb-16 section-title">Services I Offer</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="card p-6 text-center">
-                    <div class="text-3xl text-fuchsia-500 mb-4"><i class="fas fa-clipboard-check"></i></div>
-                    <h4 class="font-bold mb-2">Manual Testing & QA</h4>
-                    <p class="text-gray-400 text-sm">Comprehensive manual testing to identify functional, UI/UX, and
-                        usability issues across web and mobile applications.</p>
-                </div>
-                <div class="card p-6 text-center">
-                    <div class="text-3xl text-amber-400 mb-4"><i class="fas fa-tasks"></i></div>
-                    <h4 class="font-bold mb-2">Test Case Design & Execution</h4>
-                    <p class="text-gray-400 text-sm">Creating detailed test cases and systematic execution of
-                        comprehensive test scenarios to ensure complete coverage.</p>
-                </div>
-                <div class="card p-6 text-center">
-                    <div class="text-3xl text-green-400 mb-4"><i class="fas fa-bug"></i></div>
-                    <h4 class="font-bold mb-2">Defect Documentation</h4>
-                    <p class="text-gray-400 text-sm">Professional bug reporting with detailed reproduction steps, impact
-                        analysis, and clear communication to development teams.</p>
-                </div>
-                <div class="card p-6 text-center">
-                    <div class="text-3xl text-blue-400 mb-4"><i class="fas fa-search"></i></div>
-                    <h4 class="font-bold mb-2">Exploratory Testing</h4>
-                    <p class="text-gray-400 text-sm">Uncovering edge cases and unexpected behaviors through systematic
-                        exploration and real-world usage scenarios.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Experience Section -->
+<div class="section-divider"></div>
+<section id="experience" class="py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold mb-16 section-title">Work Experience</h2>
 
-    <div class="section-divider"></div>
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 reveal">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold mb-16 section-title">Testing Projects & Achievements</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="card p-6 flex flex-col items-center text-center">
-                    <div class="text-4xl text-green-400 mb-4"><i class="fas fa-tasks"></i></div>
-                    <h3 class="text-xl font-bold mb-2">uTest Practice Cycle</h3>
-                    <p class="text-gray-400 mb-4 flex-grow">Successfully completed the practice cycle using exploratory
-                        testing on a live project under an NDA.</p>
-                    <span class="mt-auto font-semibold text-gray-500">Details Confidential</span>
-                </div>
-                <div class="card p-6 flex flex-col items-center text-center">
-                    <div class="text-4xl text-blue-400 mb-4"><i class="fas fa-credit-card"></i></div>
-                    <h3 class="text-xl font-bold mb-2">Online Payment Processing System (Java)</h3>
-                    <p class="text-gray-400 mb-4 flex-grow">Object-oriented design demonstrating abstract classes,
-                        interfaces, subclasses, and
-                        polymorphism to support multiple payment methods (e.g., card, wallet) with validation and
-                        security checks. Emphasizes clean architecture and extensibility for adding new payment types.
-                    </p>
-                    <a href="https://github.com/RewanAbdulkariem/Java-Learning-Projects/tree/main/Online%20Payment%20Processing%20System/src"
-                        target="_blank" rel="noopener" class="btn-primary">View Source</a>
-                </div>
-                <div class="card p-6 flex flex-col items-center text-center">
-                    <div class="text-4xl text-purple-400 mb-4"><i class="fas fa-university"></i></div>
-                    <h3 class="text-xl font-bold mb-2">University Course Registration System (Java OOP)</h3>
-                    <p class="text-gray-400 mb-4 flex-grow">Demonstrates OOP principles—Encapsulation, Inheritance,
-                        Polymorphism, Abstraction, and
-                        Interfaces—through a modular course enrollment domain (students, courses, registration rules),
-                        highlighting clean modeling and extensibility.</p>
-                    <a href="https://github.com/RewanAbdulkariem/DEPI-Software-Testing-Assignments/tree/main/University%20Course%20Registration%20System"
-                        target="_blank" rel="noopener" class="btn-primary">View Source</a>
-                </div>
-                <div class="card p-6 flex flex-col items-center text-center md:col-span-2 lg:col-span-3">
-                    <div class="text-4xl text-yellow-400 mb-4"><i class="fas fa-trophy"></i></div>
-                    <h3 class="text-xl font-bold mb-2">Competition Leadership Achievements</h3>
-                    <p class="text-gray-400 mb-4 flex-grow">Led and mentored student teams to achieve top rankings in
-                        major competitions, including <strong>1st place in the AIO Competition (Arab World)</strong> for
-                        Computer Vision and top 3 placements in Egypt for Machine Learning, Coding, and Arduino
-                        projects.</p>
+        <div class="relative timeline-container">
+            <div class="timeline-line"></div>
+
+            <!-- Quad Insight -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content card p-6">
+                    <span class="text-sm font-semibold text-gray-400">Nov 2025 – Present</span>
+                    <h3 class="text-xl font-bold text-fuchsia-500 mt-1">Software Test Engineer Intern</h3>
+                    <p class="text-md text-gray-300 font-semibold mb-3">Quad Insight</p>
+                    <ul class="list-disc list-inside text-gray-400 text-sm space-y-1 leading-relaxed">
+                        <li>Created and executed structured test cases to validate core functionalities and user flows.</li>
+                        <li>Performed manual and exploratory testing to identify functional issues, UI inconsistencies, and usability gaps.</li>
+                        <li>Authored high-quality bug reports with clear reproduction steps and relevant evidence.</li>
+                        <li>Collaborated with developers during bug triage and verified fixes through retesting.</li>
+                    </ul>
                 </div>
             </div>
+
+            <!-- uTest -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content card p-6">
+                    <span class="text-sm font-semibold text-gray-400">Sept 2025 – Present</span>
+                    <h3 class="text-xl font-bold text-fuchsia-500 mt-1">Freelance Software Tester</h3>
+                    <p class="text-md text-gray-300 font-semibold mb-3">uTest</p>
+                    <ul class="list-disc list-inside text-gray-400 text-sm space-y-1 leading-relaxed">
+                        <li>Performed end-to-end testing on real-world websites and mobile applications for global clients.</li>
+                        <li>Conducted exploratory testing to uncover functional and visual defects effectively.</li>
+                        <li>Documented precise, reproducible bug reports aligned with professional QA standards.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- TA - Damanhur University -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content card p-6">
+                    <span class="text-sm font-semibold text-gray-400">Sept 2024 – Sept 2025</span>
+                    <h3 class="text-xl font-bold text-fuchsia-500 mt-1">Teaching Assistant</h3>
+                    <p class="text-md text-gray-300 font-semibold mb-3">Damanhur University</p>
+                    <ul class="list-disc list-inside text-gray-400 text-sm space-y-1 leading-relaxed">
+                        <li>Taught foundational programming and computer science concepts using Python.</li>
+                        <li>Debugged large amounts of student code, sharpening precision and attention to detail.</li>
+                        <li>Supported microprocessor labs, guiding students through Intel 8086 & 8051 programming.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- TechnoFuture -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content card p-6">
+                    <span class="text-sm font-semibold text-gray-400">July 2024 – April 2025</span>
+                    <h3 class="text-xl font-bold text-fuchsia-500 mt-1">Programming Instructor & Team Lead</h3>
+                    <p class="text-md text-gray-300 font-semibold mb-3">TechnoFuture</p>
+                    <ul class="list-disc list-inside text-gray-400 text-sm space-y-1 leading-relaxed">
+                        <li>Delivered engaging training sessions in programming logic and problem-solving.</li>
+                        <li>Led student teams that achieved national and regional awards in tech innovation competitions.</li>
+                        <li>Encouraged creativity, teamwork, and hands-on application through real project challenges.</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Services Section -->
+<div class="section-divider"></div>
+<section id="services" class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <h2 class="text-4xl font-bold mb-16 section-title">Services I Offer</h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- Manual Testing -->
+            <div class="card p-6 text-center">
+                <div class="text-3xl text-fuchsia-500 mb-4"><i class="fas fa-clipboard-check"></i></div>
+                <h4 class="font-bold mb-2">Manual Functional Testing</h4>
+                <p class="text-gray-400 text-sm">
+                    Thorough manual testing to verify core functionality, user flows, and UI/UX behavior across your website or application.
+                </p>
+            </div>
+
+            <!-- Exploratory Testing -->
+            <div class="card p-6 text-center">
+                <div class="text-3xl text-blue-400 mb-4"><i class="fas fa-search"></i></div>
+                <h4 class="font-bold mb-2">Exploratory & Usability Testing</h4>
+                <p class="text-gray-400 text-sm">
+                    Discovering hidden issues and usability problems through real-world exploration beyond structured test cases.
+                </p>
+            </div>
+
+
+            <!-- Bug Reporting -->
+            <div class="card p-6 text-center">
+                <div class="text-3xl text-green-400 mb-4"><i class="fas fa-bug"></i></div>
+                <h4 class="font-bold mb-2">Bug Reporting & Documentation</h4>
+                <p class="text-gray-400 text-sm">
+                    Creating precise, reproducible bug reports with steps, screenshots, severity, and detailed impact analysis.
+                </p>
+            </div>
+
+            <!-- API & Database Testing -->
+            <div class="card p-6 text-center">
+                <div class="text-3xl text-indigo-400 mb-4"><i class="fas fa-database"></i></div>
+                <h4 class="font-bold mb-2">API & Database Testing</h4>
+                <p class="text-gray-400 text-sm">
+                    Validating API responses, data flow, and backend accuracy to ensure reliable integrations and correct system behavior.
+                </p>
+            </div>
+
+            <!-- Automation Testing -->
+            <div class="card p-6 text-center">
+                <div class="text-3xl text-purple-400 mb-4"><i class="fas fa-robot"></i></div>
+                <h4 class="font-bold mb-2">Automation Testing</h4>
+                <p class="text-gray-400 text-sm">
+                    Developing automated test scripts using Selenium & Java to enhance regression efficiency and reduce manual effort.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="section-divider"></div>
+<!-- Projects Section -->
+<section id="projects" class="py-20 reveal">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold mb-16 section-title">Testing Projects & Achievements</h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- OpenCart Testing Project -->
+            <div class="card p-6 flex flex-col items-center text-center">
+                <div class="text-4xl text-fuchsia-400 mb-4"><i class="fas fa-shopping-cart"></i></div>
+                <h3 class="text-xl font-bold mb-2">OpenCart E-Commerce Testing</h3>
+                <p class="text-gray-400 mb-4 flex-grow">
+                    Performed manual, API, and database testing on OpenCart modules including login, cart, checkout, and admin panel.
+                    Currently developing automation scripts using Selenium & Java.
+                </p>
+                <a href="https://github.com/RewanAbdulkariem" 
+                   target="_blank" rel="noopener" class="btn-primary">View Work</a>
+            </div>
+
+            <!-- uTest -->
+            <div class="card p-6 flex flex-col items-center text-center">
+                <div class="text-4xl text-green-400 mb-4"><i class="fas fa-tasks"></i></div>
+                <h3 class="text-xl font-bold mb-2">uTest Projects</h3>
+                <p class="text-gray-400 mb-4 flex-grow">
+                    Participated in real-world testing cycles for global clients.  
+                    Performed exploratory testing and submitted professional bug reports under NDA.
+                </p>
+                <span class="mt-auto font-semibold text-gray-500">Details Confidential</span>
+            </div>
+
+            <!-- TestIO -->
+            <div class="card p-6 flex flex-col items-center text-center">
+                <div class="text-4xl text-blue-400 mb-4"><i class="fas fa-globe"></i></div>
+                <h3 class="text-xl font-bold mb-2">TestIO Web App Testing</h3>
+                <p class="text-gray-400 mb-4 flex-grow">
+                    Executed functional and UI testing on live web applications, identifying usability issues and documenting high-quality bugs.
+                </p>
+                <span class="mt-auto font-semibold text-gray-500">NDA Protected</span>
+            </div>
+
+            <!-- API Testing -->
+            <div class="card p-6 flex flex-col items-center text-center">
+                <div class="text-4xl text-yellow-400 mb-4"><i class="fas fa-code"></i></div>
+                <h3 class="text-xl font-bold mb-2">API Testing – Postman</h3>
+                <p class="text-gray-400 mb-4 flex-grow">
+                    Designed and executed API test cases for multiple endpoints, validating responses, request flows, and status codes using Postman.
+                </p>
+            </div>
+
+            <!-- Database Testing -->
+            <div class="card p-6 flex flex-col items-center text-center">
+                <div class="text-4xl text-indigo-400 mb-4"><i class="fas fa-database"></i></div>
+                <h3 class="text-xl font-bold mb-2">Database Testing – MySQL</h3>
+                <p class="text-gray-400 mb-4 flex-grow">
+                    Performed database validation using SQL queries to verify data integrity, record updates, and backend workflow accuracy.
+                </p>
+            </div>
+
+            <!-- Achievements -->
+            <div class="card p-6 flex flex-col items-center text-center md:col-span-2 lg:col-span-3">
+                <div class="text-4xl text-orange-400 mb-4"><i class="fas fa-trophy"></i></div>
+                <h3 class="text-xl font-bold mb-2">Competition Achievements</h3>
+                <p class="text-gray-400 mb-4 flex-grow">
+                    Led teams to achieve top awards including:
+                    <strong>1st place (Arab World) – AIO Competition – Computer Vision</strong>  
+                    and top ranks in Egypt for Machine Learning, Coding, and Arduino projects.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 
     <!-- Testimonials Section -->
     <div class="section-divider"></div>

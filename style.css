@@ -214,18 +214,118 @@ h6 {
     opacity: 1;
     visibility: visible;
 }
+/* ------ updated skill-badge hover (sweep + lift) - final LTR version ------ */
 
 .skill-badge {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255,255,255,0.08);
     transition: var(--transition);
+    overflow: hidden;
+    border-radius: 12px;
+    /* keep padding from Tailwind (p-4) if present */
+  }
+  
+  /* sweep gradient pseudo-element */
+  .skill-badge::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(90deg,
+        rgba(255,255,255,0) 0%,
+        rgba(217,70,239,0.08) 30%,
+        rgba(251,191,36,0.06) 55%,
+        rgba(255,255,255,0) 100%);
+    transform: skewX(-12deg);
+    transition: left 0.6s ease;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  /* hover state */
+  .skill-badge:hover {
+    transform: translateY(-6px);
+    border-color: rgba(217,70,239,0.35);
+    box-shadow: 0 18px 30px rgba(217,70,239,0.08);
+    background: rgba(217,70,239,0.04);
+  }
+  
+  /* move sweep across on hover */
+  .skill-badge:hover::before {
+    left: 120%;
+  }
+  
+  /* ensure content stays above the sweep */
+  .skill-badge > * {
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s var(--transition);
+  }
+  
+  .skill-badge:hover > * {
+    transform: translateY(-2px);
+  }
+  
+  /* icon box styling (LTR - icon placed left of text uses margin-right) */
+  .skill-icon-box {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    margin-right: 12px; /* changed to margin-right for LTR layout */
+    flex-shrink: 0;
+    box-shadow: 0 6px 18px rgba(217,70,239,0.08);
+    transition: transform 0.35s cubic-bezier(.22,.9,.2,1), box-shadow 0.35s;
+  }
+  
+  /* icon box hover micro-animation */
+  .skill-badge:hover .skill-icon-box {
+    transform: translateY(-3px) rotate(6deg);
+    box-shadow: 0 18px 40px rgba(217,70,239,0.12);
+  }
+  
+  /* optional smaller variant for the rounded "skill tag" used in About section */
+  .skill-badge.rounded-full {
+    border-radius: 9999px;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  /* ================================
+   3D Tool Icon Spin Hover
+   ================================ */
+
+.tech-icon {
+    perspective: 900px; /* depth */
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease, background 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
 
-.skill-badge:hover {
-    background: rgba(217, 70, 239, 0.2);
-    /* Pink hover */
-    border-color: var(--primary);
-    transform: translateY(-2px);
+.tech-icon i {
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    display: inline-block;
+    transition: transform 0.8s cubic-bezier(.2,.9,.3,1);
+}
+
+/* Hover effect */
+.tech-icon:hover i {
+    transform: rotateY(360deg);
+}
+
+/* Optional glow + lift */
+.tech-icon:hover {
+    transform: translateY(-6px);
+    background: rgba(217, 70, 239, 0.15);
+    box-shadow: 0 15px 30px rgba(217,70,239,0.12);
 }
 
 .contact-card {
